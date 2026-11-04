@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kerfuffle – Support</title>
+<meta name="description" content="Support, guide, and privacy policy for Kerfuffle, a Mac app for playing Go on the KGS go server.">
+<meta name="apple-itunes-app" content="app-id=6801664405">
+<link rel="icon" href="kerfuffleIcon.png">
+<link rel="apple-touch-icon" href="kerfuffleIcon.png">
+<style>
+:root{
+  --bg:#fafaf9; --card:#fff; --text:#1c1c1e; --muted:#6b6b70; --line:#e6e6e8;
+  --accent:#04AA6D; --accent-ink:#03804f; --accent-soft:#e7f6ef;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#111113; --card:#1c1c1f; --text:#f2f2f4; --muted:#a0a0a8; --line:#2c2c31;
+        --accent:#2ecc8f; --accent-ink:#5fe0ad; --accent-soft:#16302a;}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);
+  font:17px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+a{color:var(--accent-ink)}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+
+/* header */
+.nav{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;padding:14px 0;font-size:15px;border-bottom:1px solid var(--line)}
+.nav a{color:var(--muted);text-decoration:none}
+.nav a:hover{color:var(--text)}
+
+/* hero */
+.hero{text-align:center;padding:48px 0 24px}
+.hero .icon{width:96px;height:96px;border-radius:22px;box-shadow:0 6px 20px rgba(0,0,0,.15)}
+.hero h1{font-size:clamp(28px,5vw,40px);line-height:1.15;margin:18px 0 8px;letter-spacing:-.02em}
+.hero .slogan{font-size:21px;font-weight:600;color:var(--accent-ink);margin:0 0 6px}
+.hero p.lede{color:var(--muted);font-size:19px;max-width:560px;margin:0 auto 22px}
+.badge img{height:48px;width:auto}
+
+.shots{display:flex;justify-content:center;gap:24px;margin:36px 0 8px}
+.shots figure{margin:0;text-align:center}
+.shots img{width:300px;height:auto;border-radius:24px;border:1px solid var(--line);
+  box-shadow:0 10px 30px rgba(0,0,0,.10)}
+.shots figcaption{font-size:13px;color:var(--muted);margin-top:8px}
+
+/* sections */
+section{padding:40px 0;border-top:1px solid var(--line)}
+section:first-of-type{border-top:0}
+h2{font-size:24px;letter-spacing:-.01em;margin:0 0 14px}
+h3{font-size:18px;margin:0 0 4px}
+
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin:0;padding:0;list-style:none}
+.features li{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+.features li p{margin:0;color:var(--muted);font-size:15px}
+
+.note{font-size:15px;color:var(--muted)}
+
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;margin:10px 0;padding:0 16px}
+summary{cursor:pointer;font-weight:600;padding:14px 0;list-style:none;display:flex;justify-content:space-between}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--muted);font-weight:400}
+details[open] summary::after{content:"–"}
+details p{margin:0 0 14px}
+
+.versions{list-style:none;padding:0;margin:0}
+.versions li{display:grid;grid-template-columns:64px 1fr;gap:10px;padding:10px 0;border-bottom:1px solid var(--line);font-size:15px}
+.versions b{color:var(--accent-ink)}
+
+.privacy-box{background:var(--accent-soft);border-radius:14px;padding:20px}
+.privacy-box ul{columns:2;margin:6px 0 12px}
+
+.contact{text-align:center}
+.btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;padding:12px 22px;border-radius:999px}
+footer{text-align:center;color:var(--muted);font-size:14px;padding:30px 0 50px}
+
+@media (max-width:520px){
+  .shots{gap:14px}.shots img{width:240px;border-radius:18px}
+  .privacy-box ul{columns:1}
+}
+</style>
+</head>
+<body>
+<nav class="nav wrap" aria-label="Page sections">
+  <a href="#start">System requirements</a><a href="#guide">Guide</a>
+  <a href="#versions">What’s new</a><a href="#privacy">Privacy</a><a href="#contact">Contact</a>
+</nav>
+
+<main class="wrap">
+  <header class="hero">
+    <img class="icon" src="kgsMacIcon.png" alt="" width="96" height="96">
+    <h1>Kerfuffle</h1>
+    <p class="slogan"KGS on your Mac -- no Java, no AI.</p>
+    <p class="lede">Play and observe games on the KGS go server with this native MacOS client -- no java required.</p>
+    <a class="badge" href="https://apps.apple.com/us/app/mrgoproblemworkout/id6801664405">
+      <img src="dlAppStoreLogo.svg" alt="Download on the App Store" width="144" height="48"></a>
+    <div class="shots">
+      <figure><img src="ssker-launch.png" alt="Launch screen" width="400" height="400" loading="lazy"><figcaption>Simple interface gets you started</figcaption></figure>
+      <figure><img src="ssker-rooms.png" alt="Rooms screen" width="400" height="400" loading="lazy"><figcaption>View rooms, users and games</figcaption></figure>
+      <figure><img src="ssker-game.png" alt="Game screen" width="400" height="400" loading="lazy"><figcaption>Game in progress</figcaption></figure>
+    </div>
+  </header>
+
+  <section id="start">
+    <h2>System Requirements</h2>
+    <ul class="features">
+      <li><h3>1 · Mac</h3><p>MacOS 14.6 (Sonoma) or greater.</p></li>
+      <li><h3>2 · iPad</h3><p>iOS 17.6 or greater. Same KGS client, same KGS taste!</p></li>
+      <li><h3>3 · iPhone</h3><p>Coming soon.</p></li>
+    </ul>
+  </section>
+  <section id="guide">
+    <h2>Guide</h2>
+    <details open><summary>Getting started</summary>
+      <p>The launcher offers <b>Play on KGS</b>. <b>Edit SGF File</b>, <b>Create SGF File</b>, <b>Settings</b>, <b>Help</b> and <b>Quit</b></p></details>
+    <details><summary>Logging In</summary>
+      <p>Choose <b>Play on KGS</b> and log in with your KGS account. No account yet? Click <b>Register new account</b> to request one from the KGS website. Guest logins are not supported.</p></details>
+    <details><summary>Rooms and chat</summary>
+      <p>Each room you have joined appears as a tab. <b>Rooms -> Room List</b> or <b>+</b> lists every room by category; double-click one to join. Rooms you have joined persist after you log out.</p></details>
+    <details><summary>Playing games</summary>
+      <p><b>Rooms -> New Game</b> creates a game offer in the current room. Choose your settings (ranked vs free, color, rules, time etc). To play someone else's offer double-click a challenge in the room's game list and select <b>Offer to Play</b>. The game will open in a separate window.</p></details>
+    <details><summary>Settings</summary>
+      <p>Set your default name, rooms to join after login, chat font sizes, board appearance and coordinates, move numbers, time warnings, sounds and server address (you shouldn't have to change this but just in case it moves in the future).</p></details>
+    <details><summary>SGF editor</summary>
+      <p>Create or edit standard SGF files. Useful for reviewing games and/or creating custom problems. Variations are marked by letters. Shift-click a stone or intersection (long-press on iPad) to jump to the move played there.</p></details>
+    <details><summary>Misc</summary>
+      <p>This app uses the KGS JSON protocol to communicate with the server. KGS AI is not supported. Guest logins are not supported.</p></details>
+  </section>
+
+  <section id="versions">
+    <h2>What’s new</h2>
+    <ul class="versions">
+      <li><b>1.0</b><span>Initial release for MacOS and iPad.</span></li>
+    </ul>
+  </section>
+
+  <section id="privacy">
+    <h2>Privacy</h2>
+    <div class="privacy-box">
+      <p><b>Kerfuffle collects no data of any kind.</b> No personal information, device information, usage data or location. It uses no third-party services — no analytics, advertising or payment processors — and does not access your camera, photos, microphone, contacts or location.</p>
+      <p class="note">Last updated 24 October 2026 · Full policy text continues here…</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Questions or feedback?</h2>
+    <a class="btn" href="mailto:mrmrsupport@proton.me?subject=Kerfuffle%20support">Email support</a>
+  </section>
+</main>
+<footer>© 2026 Frank Brown</footer>
+</body>
+</html>
